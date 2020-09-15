@@ -28,3 +28,4 @@ The project uses make utiliy to cordinate the most of the processes, but Jenkins
 
 ### Furter improvements posibilities
 This application is not designed to persist SQL data. The data is persistent as long the mysqlserver deployment part of the application lives in kubernetes. It can be extended to persist the data, and eventually even make the database part scalable.
+Also it is easy to extend the application with scripts to rollback deployment or delete the old deployment.
