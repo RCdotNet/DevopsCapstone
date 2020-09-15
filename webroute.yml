@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apacheroute
+spec:
+  type: LoadBalancer
+  selector:
+    app: caps
+    ver: initial
+  ports:
+  - protocol: TCP
+    port: 8090
+    targetPort: 80
+    #nodeport: 8090
+    

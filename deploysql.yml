@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysqlserver
+spec:
+  selector:
+    matchLabels:
+      app: mysqlserver
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mysqlserver
+    spec:
+      containers:
+      - name: sql
+        image: rcdotnet/mysqldemo:v1
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: Uda
+        ports:
+        - containerPort: 3306
+
+       
