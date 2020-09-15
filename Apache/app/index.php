@@ -13,6 +13,7 @@
 <script src="scripts/bootstrap/bootstrap.min.js"> </script>
 <?php
 $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+HDBKLhölyEGLeögy
 $acceptedLanguage = ['sv','hu']; 
 $pageLanguage = in_array($lang, $acceptedLanguage) ? $lang : 'def';
 $pageLanguage="def"; //to force a language.
