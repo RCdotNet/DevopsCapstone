@@ -35,7 +35,6 @@
               }
             ],
             "InstanceType": "t3.medium",
-            "KeyName": "UdacityC3",
             "MetadataOptions": {
               "HttpPutResponseHopLimit": 2,
               "HttpTokens": "optional"
