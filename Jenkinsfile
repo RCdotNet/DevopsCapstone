@@ -47,7 +47,7 @@ pipeline {
       steps {
         withAWS (region: 'us-west-2', credentials:'AWSCred'){
          sh 'aws sts get-caller-identity'
-         sh 'aws eks --region us-west-2 update-kubeconfig --name capstonecluster'
+         sh 'aws eks --region us-west-2 update-kubeconfig --name capstone-cluster'
         }
       }
     }
