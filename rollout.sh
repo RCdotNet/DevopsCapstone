@@ -7,6 +7,9 @@ echo $target
 echo $appver
 sed  "s/initial/${appver}/" deploy.yml > rollout.yml
 sed  "s/initial/${appver}/" webroute.yml > switchower.yml
+whoami
+kubectl config current-context
+kubectl config get-contexts
 kubectl apply -f rollout.yml
 #kubectl get deployment capstone-$target -o=yaml | sed -e "s/$target/$appver/g" | kubectl apply -f - 
 kubectl rollout status deployment/capstone-$appver
