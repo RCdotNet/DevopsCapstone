@@ -18,7 +18,7 @@ COPY app/Cameleon2.zip /app/
 #Copy mysql initialization
 
 
-RUN unzip /app/Cameleon2 -d /var/www/html
+RUN unzip /app/Cameleon2 -do /var/www/html
 
 #ENTRYPOINT [ "start apache2" "-D" "FOREGROUND" ]
 
